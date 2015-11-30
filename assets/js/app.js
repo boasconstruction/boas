@@ -1,12 +1,12 @@
 (function ($, window, document, undefined) {
     'use strict';
-	
+
 	jQuery(document).ready(function(){
 
 	/* ==============================================
 		REVOLUTION SLIDER
 	=============================================== */
-											
+
 		jQuery('.tp-banner').show().revolution(
 		{
 			dottedOverlay:"none",
@@ -14,26 +14,26 @@
 			startwidth:1170,
 			startheight:700,
 			hideThumbs:200,
-			
+
 			thumbWidth:100,
 			thumbHeight:50,
 			thumbAmount:5,
-			
+
 			navigationType:"none",
 			navigationArrows:"solo",
 			navigationStyle:"preview1",
-			
+
 			touchenabled:"off",
 			onHoverStop:"off",
-			
+
 			swipe_velocity: 0.7,
 			swipe_min_touches: 1,
 			swipe_max_touches: 1,
 			drag_block_vertical: false,
-									
-									
+
+
 			keyboardNavigation:"off",
-			
+
 			navigationHAlign:"center",
 			navigationVAlign:"bottom",
 			navigationHOffset:0,
@@ -48,47 +48,47 @@
 			soloArrowRightValign:"center",
 			soloArrowRightHOffset:20,
 			soloArrowRightVOffset:0,
-					
+
 			shadow:0,
 			fullWidth:"off",
 			fullScreen:"on",
 
 			spinner:"spinner0",
-			
+
 			stopLoop:"off",
 			stopAfterLoops:-1,
 			stopAtSlide:-1,
 
 			shuffle:"off",
 			hideTimerBar:"on",
-									
-			forceFullWidth:"off",                       
-			fullScreenAlignForce:"off",                     
-			minFullScreenHeight:"400",                      
-									
+
+			forceFullWidth:"off",
+			fullScreenAlignForce:"off",
+			minFullScreenHeight:"400",
+
 			hideThumbsOnMobile:"off",
-			hideNavDelayOnMobile:1500,                      
+			hideNavDelayOnMobile:1500,
 			hideBulletsOnMobile:"off",
 			hideArrowsOnMobile:"off",
 			hideThumbsUnderResolution:0,
-			
+
 			hideSliderAtLimit:0,
 			hideCaptionAtLimit:0,
 			hideAllCaptionAtLilmit:0,
 			startWithSlide:0,
-			fullScreenOffsetContainer: ".header"    
-		});                                        
+			fullScreenOffsetContainer: ".header"
+		});
 
-		
+
 		(function () {
 
-			window.onerror = function myErrorHandler(errorMsg, url, lineNumber) {   
+			window.onerror = function myErrorHandler(errorMsg, url, lineNumber) {
 
 				return true;
 			}
 
 		})();
-	
+
 	/* ==============================================
 		COUNTDOWN CALL
 	=============================================== */
@@ -155,11 +155,11 @@
 		  navigation : false,
 		  slideSpeed : 300,
 		  paginationSpeed : 400,
-		  singleItem:true                              
+		  singleItem:true
 		});
-	 
+
 	});
-	
+
 	$(window).load(function(){
 	/* ==============================================
 		STICKY NAVBAR CALL
@@ -171,14 +171,14 @@
 		PAGE PRELOADER
 	=============================================== */
 
-		jQuery("#preloader").delay(900).fadeOut(500); 
-		
+		jQuery("#preloader").delay(900).fadeOut(500);
+
 	});
 
 	/* ==============================================
 		OFF-CANVAS NAV
 	=============================================== */
-	
+
 	$(function() {
 		var $menu = $('nav#menu'),
 			$html = $('html, body');
@@ -192,7 +192,7 @@
 			{
 				var href = $(this).attr( 'href' );
 
-				//  if the clicked link is linked to an anchor, scroll the page to that anchor 
+				//  if the clicked link is linked to an anchor, scroll the page to that anchor
 				if ( href.slice( 0, 1 ) == '#' )
 				{
 					$menu.one(
@@ -204,11 +204,11 @@
 								{
 									$html.animate({
 										scrollTop: $( href ).offset().top
-									}); 
+									});
 								}, 10
-							);  
+							);
 						}
-					);                      
+					);
 				}
 			}
 		);
@@ -228,7 +228,7 @@
 			}, 1000, function(){
 			window.location.hash = hash;
 		});
-	}); 
+	});
 
 	 /* ==============================================
 		CUBE PORTFOLIO
@@ -435,7 +435,7 @@
 
 		defaultFilter: '*',
 
-		animationType: 'flipOutDelay', 
+		animationType: 'flipOutDelay',
 
 		gapVertical: 30,
 
@@ -620,14 +620,14 @@
 	=============================================== */
 
 		function initialize() {
-		var myLatlng = new google.maps.LatLng(40.712784, -74.005941); // Change your location Latitude and Longitude 
+		var myLatlng = new google.maps.LatLng(49.2548374, -123.0097318); // Change your location Latitude and Longitude 
 		var mapOptions = {
 		zoom: 15,
 		center: myLatlng
 		}
 		var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-	// Disabled Map Scroll in Contact Page 
+	// Disabled Map Scroll in Contact Page
 		map.setOptions({'scrollwheel': false});
 
 	// Black and White style for Google Map
@@ -650,14 +650,14 @@
 		];
 		map.setOptions({styles: styles});
 
-	// Google Map Maker 
+	// Google Map Maker
 		var marker = new google.maps.Marker({
 		position: myLatlng,
 		map: map,
 		});
 		}
 
-		google.maps.event.addDomListener(window, 'load', initialize);       
+		google.maps.event.addDomListener(window, 'load', initialize);
 
 
 })(jQuery, window, document);
