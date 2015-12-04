@@ -572,6 +572,12 @@ a:focus {
 	padding-bottom: 80px;
 	background-size: cover;
 }
+#contact_bg{
+	background: url('../img/header_bg/contact_bg.jpg') 50% 0 no-repeat fixed;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	background-size: cover;
+}
 
 /* ----------------------------------------------------
 	4) SERVICES STYLES
