@@ -574,8 +574,8 @@ a:focus {
 }
 #contact_bg{
 	background: url('../img/header_bg/contact_bg.JPG') 50% 0 no-repeat fixed;
-	padding-top: 300px;
-	padding-bottom: 300px;
+	padding-top: 250px;
+	padding-bottom: 250px;
 	background-size: cover;
 }
 
