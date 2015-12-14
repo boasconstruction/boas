@@ -620,7 +620,7 @@
 	=============================================== */
 
 		function initialize() {
-		var myLatlng = new google.maps.LatLng(49.2548374, -123.0097318); // Change your location Latitude and Longitude 
+		var myLatlng = new google.maps.LatLng(49.2548, -123.0074739); // Change your location Latitude and Longitude 
 		var mapOptions = {
 		zoom: 15,
 		center: myLatlng
