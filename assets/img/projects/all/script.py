@@ -59,3 +59,6 @@ for file in os.listdir("."):
         category =  dict[order]
 
         print str % (category, name, file, file, name)
+
+# mogrify -thumbnail 311x300^ -gravity center -extent 311x300 '*.jpg'
+# mogrify -resize 1920 *.jpg
