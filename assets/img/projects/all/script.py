@@ -28,6 +28,9 @@ dict[22] = "residential"
 dict[23] = "restaurant"
 dict[24] = "residential"
 dict[25] = "residential"
+dict[26] = "residential"
+dict[27] = "residential"
+dict[28] = "residential"
 
 def my_split(s):
     return filter(None, re.split(r'(\d+)', s))
